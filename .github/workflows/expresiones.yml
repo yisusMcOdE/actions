@@ -1,9 +1,9 @@
 name: 'third workflow'
 on: [push]
 env:
-  myName: ${{ Jesus Morales }}
+  myName: Jesus Morales
   myAge: ${{28}}
-  myCharge: 'My superCharge is CEO'
+  myCharge: My superCharge is CEO
 jobs:
   ejecucion:
     runs-on: ubuntu-latest
