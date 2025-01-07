@@ -1,0 +1,18 @@
+name: 'third workflow'
+on: [push]
+env:
+  myName: ${{ Jesus Morales }}
+  myAge: ${{28}}
+  myCharge: 'My superCharge is CEO'
+jobs:
+  ejecucion:
+    runs-on: ubuntu-latest
+    steps:
+      - name: primerPaso
+        run: echo Tu nombre es $myName
+      - name: segundoPaso
+        if: ${{$myAge > 25}}
+        run: echo Sad:( your age
+      - name: tercerPaso
+        if: contains('CEO',$myCharge)
+        run: echo So great!:D !!
