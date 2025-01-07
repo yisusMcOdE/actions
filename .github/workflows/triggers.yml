@@ -1,0 +1,17 @@
+name: My second workflow
+on: 
+  schedule: 
+    - cron: '0 14 * * 6'
+  issues:
+    types: [opened, edited]
+  pull_request:
+    types: [opened, labeled]
+    branches:
+      - 'SDA-/**'
+jobs:
+  sabado:
+    runs-on: ubuntu-latest
+    steps:
+      - name : primer paso
+        run: echo Ya es sabado
+        
