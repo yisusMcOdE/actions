@@ -14,5 +14,5 @@ jobs:
         if: ${{ env.myAge > 25}}
         run: echo 'Sad your age :('
       - name: tercerPaso
-        if: contains('CEO', env.myCharge)
+        if: contains(env.myCharge, 'CEO')
         run: echo 'So great :D!!!'
