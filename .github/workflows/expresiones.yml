@@ -11,8 +11,8 @@ jobs:
       - name: primerPaso
         run: echo Tu nombre es $myName
       - name: segundoPaso
-        if: ${{$myAge > 25}}
+        if: ${{ env.myAge > 25}}
         run: echo Sad:( your age
       - name: tercerPaso
-        if: contains('CEO',$myCharge)
+        if: contains('CEO', env.myCharge)
         run: echo So great!:D !!
