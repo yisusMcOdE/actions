@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: primerPaso
-        run: echo Tu nombre es $myName
+        run: echo 'Tu nombre es ${{ env.myName }}'
       - name: segundoPaso
         if: ${{ env.myAge > 25}}
-        run: echo Sad:( your age
+        run: echo 'Sad your age :('
       - name: tercerPaso
         if: contains('CEO', env.myCharge)
-        run: echo So great!:D !!
+        run: echo 'So great :D!!!'
