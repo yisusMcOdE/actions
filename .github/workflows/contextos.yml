@@ -1,0 +1,8 @@
+name: 4 workflow
+on: push
+jobs:
+  primerPaso:
+    runs-on: ubuntu-latest
+    steps:
+      - name: firstStep 
+        run: echo '${{github.actor}}'
