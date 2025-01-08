@@ -1,0 +1,8 @@
+name: LastWorkflow
+on: [push]
+jobs:
+  primerTrabajo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: first-Step
+        run: echo 'your name is $vars.MYNAME'
